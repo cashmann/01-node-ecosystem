@@ -1,4 +1,4 @@
-const arith = require('../lib/arithmetic')
+const arith = require('../lib/arithmetic');
 
 describe('arith', ()=>{
   describe('add', ()=>{
