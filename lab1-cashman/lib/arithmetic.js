@@ -1,4 +1,7 @@
 exports.add = (x,y) =>{
+  if(typeof(x)!== 'number' || typeof(y)!== 'number'){
+    return null;
+  }
   if(isNaN(x+y)){
     return null;
   }
@@ -6,6 +9,9 @@ exports.add = (x,y) =>{
 };
 
 exports.sub = (x,y) =>{
+  if(typeof(x)!== 'number' || typeof(y)!== 'number'){
+    return null;
+  }
   if(isNaN(x-y)){
     return null;
   }

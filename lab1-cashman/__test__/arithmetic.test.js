@@ -6,6 +6,8 @@ describe('arith', ()=>{
       expect(arith.add(1,1)).toBe(2);
       expect(arith.add(NaN, NaN)).toBe(null);
       expect(arith.add(1, NaN)).toBe(null);
+      expect(arith.add('1', 1)).toBe(null);
+      expect(arith.add(1, '1')).toBe(null);
     });
   });
   describe('sub', ()=>{
@@ -14,6 +16,8 @@ describe('arith', ()=>{
       expect(arith.sub(1,2)).toBe(1);
       expect(arith.sub(NaN, NaN)).toBe(null);
       expect(arith.sub(1, NaN)).toBe(null);
+      expect(arith.sub('1', 1)).toBe(null);
+      expect(arith.sub(1, '1')).toBe(null);
     });
   });
 });
